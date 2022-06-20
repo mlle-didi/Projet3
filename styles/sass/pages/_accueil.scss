@@ -9,15 +9,17 @@
     }
 }
 
-img {
-    width: 100%;
+section{
+    background-color: $light-grey;
 }
-
 
 section:first-of-type{
     text-align: center;
     align-items: center;
     padding : 1rem;
     padding-bottom: 3rem;
-    background-color: $light-grey;
+} 
+
+section:nth-child(even){
+    background-color: white;
 } 

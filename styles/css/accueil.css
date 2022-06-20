@@ -31,6 +31,15 @@ img {
   width: 200px;
 }
 
+.card {
+  box-shadow: 1px 5px 5px lightgrey;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
 strong {
   font-weight: bold;
 }
@@ -60,8 +69,8 @@ header {
   margin-right: 10px;
 }
 
-img {
-  width: 100%;
+section {
+  background-color: #f4f2f2;
 }
 
 section:first-of-type {
@@ -69,7 +78,10 @@ section:first-of-type {
   align-items: center;
   padding: 1rem;
   padding-bottom: 3rem;
-  background-color: #f4f2f2;
+}
+
+section:nth-child(even) {
+  background-color: white;
 }
 
 .step-container {
@@ -84,7 +96,6 @@ section:first-of-type {
   align-items: center;
   background-color: #f4f2f2;
   border-radius: 30px;
-  box-shadow: 1px 5px 5px lightgrey;
   padding: 2em 0;
   margin: 10px 0;
   transition: background-color;
@@ -117,6 +128,56 @@ section:first-of-type {
 }
 .step-container .step:hover i {
   color: #9356DC;
+}
+
+.restaurant {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  display: flex;
+  margin-bottom: 20px;
+  background-color: white;
+  position: relative;
+}
+.restaurant a {
+  width: 100%;
+  height: 100%;
+}
+.restaurant a img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  object-position: bottom;
+}
+.restaurant-description {
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+.restaurant-description-title {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.restaurant-description-city {
+  margin-top: 2px;
+}
+.restaurant-description div {
+  display: flex;
+  flex-direction: column;
+}
+.restaurant-description div p {
+  margin: 2px;
+}
+.restaurant--new {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #99E2D0;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  font-size: 0.7em;
+  color: #278870;
 }
 
 /*# sourceMappingURL=accueil.css.map */
