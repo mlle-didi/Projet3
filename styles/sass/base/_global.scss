@@ -24,5 +24,12 @@ h1 {
 section{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding: 1em;
 }
+
+img {
+    width: 200px;
+}
+
+strong{
+    font-weight: bold;}

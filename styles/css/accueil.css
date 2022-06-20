@@ -24,7 +24,15 @@ h1 {
 section {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 1em;
+}
+
+img {
+  width: 200px;
+}
+
+strong {
+  font-weight: bold;
 }
 
 button {
@@ -42,13 +50,13 @@ header {
   align-items: center;
 }
 
-.position {
+.location {
   text-align: center;
   background-color: #eceaea;
   padding: 1rem;
   margin: 0;
 }
-.position i {
+.location i {
   margin-right: 10px;
 }
 
@@ -58,9 +66,57 @@ img {
 
 section:first-of-type {
   text-align: center;
-  padding-top: 1rem;
+  align-items: center;
+  padding: 1rem;
   padding-bottom: 3rem;
   background-color: #f4f2f2;
+}
+
+.step-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.step-container .step {
+  width: calc(100% - 0.5em);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f4f2f2;
+  border-radius: 30px;
+  box-shadow: 1px 5px 5px lightgrey;
+  padding: 2em 0;
+  margin: 10px 0;
+  transition: background-color;
+}
+.step-container .step p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  position: relative;
+  left: -0.5em;
+}
+.step-container .step p span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  color: white;
+  background-color: #9356DC;
+}
+.step-container .step p i {
+  margin: 0 1em;
+  color: gray;
+  transition: color;
+}
+.step-container .step:hover {
+  background-color: #f4eefc;
+}
+.step-container .step:hover i {
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=accueil.css.map */

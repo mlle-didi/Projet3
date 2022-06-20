@@ -1,4 +1,4 @@
-.position{
+.location{
     text-align: center;
     background-color: $grey;
     padding: 1rem;
@@ -16,7 +16,8 @@ img {
 
 section:first-of-type{
     text-align: center;
-    padding-top: 1rem;
+    align-items: center;
+    padding : 1rem;
     padding-bottom: 3rem;
     background-color: $light-grey;
 } 
