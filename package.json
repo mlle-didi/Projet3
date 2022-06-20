@@ -1,0 +1,19 @@
+{
+  "name": "projet3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./styles/sass/accueil.scss:./styles/css/accueil.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlle-didi/Projet3.git"
+  },
+  "author": "Leroy Cindy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mlle-didi/Projet3/issues"
+  },
+  "homepage": "https://github.com/mlle-didi/Projet3#readme"
+}

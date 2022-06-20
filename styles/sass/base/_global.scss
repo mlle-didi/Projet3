@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+main{
+    width: 100%;
+}
+
+h1 {
+    font-family: $font-title;
+    font-weight: lighter;
+    margin: 0;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

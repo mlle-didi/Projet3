@@ -1,0 +1,22 @@
+.position{
+    text-align: center;
+    background-color: $grey;
+    padding: 1rem;
+    margin: 0;
+
+    & i{
+        margin-right: 10px;
+    }
+}
+
+img {
+    width: 100%;
+}
+
+
+section:first-of-type{
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    background-color: $light-grey;
+} 
