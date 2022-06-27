@@ -27,10 +27,6 @@ img {
   width: 200px;
 }
 
-.card {
-  box-shadow: 1px 5px 5px lightgrey;
-}
-
 a, a:visited {
   text-decoration: none;
   color: black;
@@ -47,48 +43,6 @@ button {
   color: white;
   background-image: linear-gradient(#FF79DA, #9356DC);
   cursor: pointer;
-}
-
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.location {
-  text-align: center;
-  background-color: #eceaea;
-  padding: 1rem;
-  margin: 0;
-  font-weight: bold;
-}
-.location i {
-  margin-right: 10px;
-}
-
-section {
-  background-color: #f4f2f2;
-}
-
-section:first-of-type {
-  text-align: center;
-  align-items: center;
-  padding: 1rem;
-  padding-bottom: 3rem;
-}
-
-section:nth-child(3n) {
-  background-color: white;
-}
-
-h1 {
-  font-family: "Shrikhand", cursif, sans-cerif;
-  font-weight: lighter;
-  margin-bottom: 1px;
-}
-
-h2 {
-  font-weight: 700;
 }
 
 .step-container {
@@ -135,55 +89,6 @@ h2 {
 }
 .step-container .step:hover i {
   color: #9356DC;
-}
-
-.restaurant {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
-  display: flex;
-  margin-bottom: 20px;
-  background-color: white;
-}
-.restaurant a {
-  width: 100%;
-  height: 100%;
-}
-.restaurant a img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  object-position: bottom;
-}
-.restaurant-description {
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 0px 10px;
-}
-.restaurant-description-title {
-  font-weight: bold;
-  margin-bottom: 0;
-}
-.restaurant-description-city {
-  margin-top: 2px;
-}
-.restaurant-description div {
-  display: flex;
-  flex-direction: column;
-}
-.restaurant-description div p {
-  margin: 2px;
-}
-.restaurant--new {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  background-color: #99E2D0;
-  font-weight: bold;
-  padding: 0.5em 1em;
-  font-size: 0.7em;
-  color: #1b6150;
 }
 
 .heart {
@@ -234,4 +139,4 @@ footer ul li i {
   color: white;
 }
 
-/*# sourceMappingURL=accueil.css.map */
+/*# sourceMappingURL=menu.css.map */

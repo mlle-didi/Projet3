@@ -15,12 +15,6 @@ main{
     width: 100%;
 }
 
-h1 {
-    font-family: $font-title;
-    font-weight: lighter;
-    margin-bottom: 1px;
-}
-
 section{
     display: flex;
     flex-direction: column;
@@ -31,10 +25,6 @@ img {
     width: 200px;
 }
 
-.card{
-    box-shadow: 1px 5px 5px $shadow-card;
-}
-
 a, a:visited{
     text-decoration: none;
     color: $black;
@@ -42,3 +32,4 @@ a, a:visited{
 
 strong{
     font-weight: bold;}
+

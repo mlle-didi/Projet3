@@ -25,6 +25,13 @@ section:nth-child(3n){
     background-color: white;
 } 
 
+h1 {
+    font-family: $font-title;
+    font-weight: lighter;
+    margin-bottom: 1px;
+}
+
 h2 {
     font-weight: 700;
 }
+
