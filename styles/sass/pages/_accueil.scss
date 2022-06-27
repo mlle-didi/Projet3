@@ -3,6 +3,7 @@
     background-color: $grey;
     padding: 1rem;
     margin: 0;
+    font-weight: bold;
 
     & i{
         margin-right: 10px;
@@ -20,6 +21,10 @@ section:first-of-type{
     padding-bottom: 3rem;
 } 
 
-section:nth-child(even){
+section:nth-child(3n){
     background-color: white;
 } 
+
+h2 {
+    font-weight: 700;
+}

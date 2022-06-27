@@ -1,2 +1,34 @@
 .heart {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 25px;
+    margin-right : 20px;
+
+        & .fas{
+            background: linear-gradient(to top, $secondary-color, $primary-color);
+            display: none;
+
+        }
+
+        &:hover{
+            & .fas{
+                display: inline;
+            }
+
+            & .far{
+                display: none;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
 }

@@ -1,3 +1,5 @@
+/* COULEURS*/
+/* TRANSITIONS */
 * {
   box-sizing: border-box;
 }
@@ -18,7 +20,7 @@ main {
 h1 {
   font-family: "Shrikhand", cursif, sans-cerif;
   font-weight: lighter;
-  margin: 0;
+  margin-bottom: 1px;
 }
 
 section {
@@ -64,6 +66,7 @@ header {
   background-color: #eceaea;
   padding: 1rem;
   margin: 0;
+  font-weight: bold;
 }
 .location i {
   margin-right: 10px;
@@ -80,8 +83,12 @@ section:first-of-type {
   padding-bottom: 3rem;
 }
 
-section:nth-child(even) {
+section:nth-child(3n) {
   background-color: white;
+}
+
+h2 {
+  font-weight: 700;
 }
 
 .step-container {
@@ -98,7 +105,7 @@ section:nth-child(even) {
   border-radius: 30px;
   padding: 2em 0;
   margin: 10px 0;
-  transition: background-color;
+  transition: background-color 0.3s;
 }
 .step-container .step p {
   display: flex;
@@ -121,7 +128,7 @@ section:nth-child(even) {
 .step-container .step p i {
   margin: 0 1em;
   color: gray;
-  transition: color;
+  transition: color 0.3s;
 }
 .step-container .step:hover {
   background-color: #f4eefc;
@@ -138,7 +145,6 @@ section:nth-child(even) {
   display: flex;
   margin-bottom: 20px;
   background-color: white;
-  position: relative;
 }
 .restaurant a {
   width: 100%;
@@ -177,7 +183,55 @@ section:nth-child(even) {
   font-weight: bold;
   padding: 0.5em 1em;
   font-size: 0.7em;
-  color: #278870;
+  color: #1b6150;
+}
+
+.heart {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 25px;
+  margin-right: 20px;
+}
+.heart .fas {
+  background: linear-gradient(to top, #FF79DA, #9356DC);
+  display: none;
+}
+.heart:hover .fas {
+  display: inline;
+}
+.heart:hover .far {
+  display: none;
+}
+
+footer {
+  padding: 1em;
+  background-color: #2e2a2a;
+}
+footer ul {
+  padding-left: 0;
+}
+footer ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 0.8rem;
+}
+footer ul li:first-of-type {
+  margin-bottom: 20px;
+  font-family: "Shrikhand", cursif, sans-cerif;
+  font-size: 1.1rem;
+}
+footer ul li a {
+  color: white;
+}
+footer ul li a:visited {
+  color: white;
+}
+footer ul li i {
+  margin-right: 5px;
+  width: 20px;
+  color: white;
 }
 
 /*# sourceMappingURL=accueil.css.map */

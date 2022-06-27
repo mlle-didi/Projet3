@@ -1,13 +1,18 @@
 @use "sass:color";
 
+/* COULEURS*/
+
 $primary-color : #9356DC ;
 $secondary-color : #FF79DA;
 $tertiary-color : #99E2D0;
-
 $light-grey : #f4f2f2;
 $grey : #eceaea;
 $black : black; 
 $shadow-card : lightgrey;
-
 $primary-color_light : color.scale($primary-color, $lightness: 90%);
-$tertiary-color_darken : darken($tertiary-color, 40%);
+$tertiary-color_darken : darken($tertiary-color, 50%);
+$grey_darken : darken($grey, 75%);
+
+/* TRANSITIONS */
+
+$transition-duration : 0.3s;

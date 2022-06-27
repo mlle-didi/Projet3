@@ -12,7 +12,7 @@
         border-radius: 30px;
         padding: 2em 0;
         margin: 10px 0;
-        transition: background-color;
+        transition: background-color $transition-duration;
 
         & p{
 
@@ -37,7 +37,7 @@
             & i {
                 margin: 0 1em;
                 color: gray;
-                transition: color;
+                transition: color $transition-duration;
             }
         }
 
