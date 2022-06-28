@@ -5,9 +5,8 @@
 }
 
 body {
-  width: 100%;
   font-family: "Roboto", sans-serif;
-  color: #333;
+  color: black;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -23,14 +22,6 @@ section {
   padding: 1em;
 }
 
-img {
-  width: 200px;
-}
-
-.card {
-  box-shadow: 1px 5px 5px lightgrey;
-}
-
 a, a:visited {
   text-decoration: none;
   color: black;
@@ -41,18 +32,27 @@ strong {
 }
 
 button {
-  padding: 20px;
+  width: fit-content;
+  padding: 10px 20px;
   border-radius: 30px;
   border: none;
   color: white;
   background-image: linear-gradient(#FF79DA, #9356DC);
   cursor: pointer;
+  align-self: center;
 }
 
 header {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 10px;
+}
+header h1 {
+  margin: 0;
+}
+header img {
+  width: 200px;
 }
 
 .location {
@@ -81,14 +81,29 @@ section:nth-child(3n) {
   background-color: white;
 }
 
-h1 {
-  font-family: "Shrikhand", cursif, sans-cerif;
-  font-weight: lighter;
-  margin-bottom: 1px;
-}
-
 h2 {
   font-weight: 700;
+}
+
+.heart {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 25px;
+  margin-right: 20px;
+  font-weight: normal;
+}
+.heart .fas {
+  display: none;
+}
+.heart:hover .fas {
+  display: inline;
+  background: linear-gradient(to top, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.heart:hover .far {
+  display: none;
 }
 
 .step-container {
@@ -137,6 +152,10 @@ h2 {
   color: #9356DC;
 }
 
+.card {
+  box-shadow: 1px 5px 5px lightgrey;
+}
+
 .restaurant {
   width: 100%;
   position: relative;
@@ -154,7 +173,6 @@ h2 {
   width: 100%;
   height: 150px;
   object-fit: cover;
-  object-position: bottom;
 }
 .restaurant-description {
   align-items: flex-start;
@@ -184,24 +202,6 @@ h2 {
   padding: 0.5em 1em;
   font-size: 0.7em;
   color: #1b6150;
-}
-
-.heart {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  font-size: 25px;
-  margin-right: 20px;
-}
-.heart .fas {
-  background: linear-gradient(to top, #FF79DA, #9356DC);
-  display: none;
-}
-.heart:hover .fas {
-  display: inline;
-}
-.heart:hover .far {
-  display: none;
 }
 
 footer {

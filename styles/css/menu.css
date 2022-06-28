@@ -5,7 +5,6 @@
 }
 
 body {
-  width: 100%;
   font-family: "Roboto", sans-serif;
   color: black;
   display: flex;
@@ -45,19 +44,20 @@ button {
 
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  padding: 0 30px;
+  margin: 10px;
 }
 header i {
-  position: relative;
-  left: -110px;
-  top: 28px;
-  font-size: x-large;
+  font-size: large;
 }
 header img {
   width: 200px;
-  margin-bottom: 10px;
+}
+header .fa-arrow-right {
+  visibility: hidden;
 }
 
 main > img {
@@ -70,11 +70,11 @@ main section {
   top: -60px;
   background-color: #f4f2f2;
 }
-main section h1 {
+main h1 {
   font-family: "Shrikhand", cursif, sans-cerif;
-  font-size: 2em;
+  font-size: 1.8em;
 }
-main section > div:first-of-type {
+main > div:first-of-type {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -82,8 +82,7 @@ main section > div:first-of-type {
 
 .menu-heart {
   position: relative;
-  right: 50px;
-  bottom: 0;
+  margin-left: 5px;
   font-size: 25px;
   margin-right: 20px;
 }

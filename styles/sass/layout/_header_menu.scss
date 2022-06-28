@@ -1,19 +1,20 @@
 header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    padding: 0 30px;
+    margin: 10px;
 
-    i {
-        position: relative;
-        left: -110px;
-        top: 28px;
-        font-size: x-large;
+    i{
+        font-size: large;
     }
 
-
-    & img {
+    & img{
         width: 200px;
-        margin-bottom: 10px;
+    }
+
+    & .fa-arrow-right{
+        visibility: hidden;
     }
 } 

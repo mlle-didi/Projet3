@@ -11,9 +11,12 @@ main{
         top: -60px;
         background-color: $light-grey;
 
+        
+            
+        }
         h1 {
             font-family: $font-title;
-            font-size: 2em;
+            font-size: 1.8em;
         }
 
         & > div:first-of-type{
@@ -22,12 +25,10 @@ main{
             justify-content: space-between;
         }
     }
-} 
 
 .menu-heart {
     position: relative;
-    right: 50px;
-    bottom: 0;
+    margin-left: 5px;
     font-size: 25px;
     margin-right : 20px;
 
