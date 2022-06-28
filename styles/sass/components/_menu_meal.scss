@@ -1,0 +1,39 @@
+.block-meal{
+    display: flex;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    margin: 10px 0;
+
+    .block-meal-container{
+        flex: 1;
+        padding: 0.8rem 0.5rem;
+
+        h3{
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+        .block-meal-description{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            p{
+                margin: 0;
+
+                &:first-child{
+                    width: 100%;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    height: 20px;
+                }
+            }
+
+            .price {
+                font-weight: bold;
+            }
+        }
+    }
+} 

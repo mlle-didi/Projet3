@@ -1,0 +1,51 @@
+main{
+
+    & > img{
+        width: 100%;
+    }
+
+    section{
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        position: relative;
+        top: -60px;
+        background-color: $light-grey;
+
+        h1 {
+            font-family: $font-title;
+            font-size: 2em;
+        }
+
+        & > div:first-of-type{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+} 
+
+.menu-heart {
+    position: relative;
+    right: 50px;
+    bottom: 0;
+    font-size: 25px;
+    margin-right : 20px;
+
+        & .fas{
+            display: none;
+
+        }
+
+        &:hover{
+            & .fas{
+                display: inline;
+                background: linear-gradient(to top, $secondary-color, $primary-color);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color : transparent;
+            }
+
+            & .far{
+                display: none;
+            }
+        }
+}
