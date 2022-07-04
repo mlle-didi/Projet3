@@ -3,7 +3,7 @@
     flex-direction: column;
 
     h2{
-        font-size: 1.2rem;
+        font-size: 1em;
         margin-bottom: 5px;
         font-weight: normal;
     }
@@ -12,5 +12,13 @@
         height: 3px;
         width: 50px;
         background-color: $tertiary-color;
+    }
+
+    .block-list{
+        display: flex;
+        flex-direction: column;
+        .block-meal{
+            @include animation-showing($child);
+        }
     }
 } 

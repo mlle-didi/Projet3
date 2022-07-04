@@ -1,5 +1,12 @@
 /* COULEURS*/
 /* TRANSITIONS */
+/* MIXIN ANIMATIONS */
+@keyframes showing {
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -31,7 +38,7 @@ strong {
   font-weight: bold;
 }
 
-button {
+button:not(.heart, .menu-heart) {
   width: fit-content;
   padding: 10px 20px;
   border-radius: 30px;
@@ -40,6 +47,11 @@ button {
   background-image: linear-gradient(#FF79DA, #9356DC);
   cursor: pointer;
   align-self: center;
+  box-shadow: 0 0 10px 5px lightgrey;
+}
+button:not(.heart, .menu-heart):hover {
+  background-image: linear-gradient(#ff93e1, #a16be0);
+  box-shadow: 0 2px 4px 0px #6d6d6d;
 }
 
 header {
@@ -77,7 +89,7 @@ section:first-of-type {
   padding-bottom: 3rem;
 }
 
-section:nth-child(3n) {
+section:nth-child(odd) {
   background-color: white;
 }
 
@@ -90,8 +102,11 @@ h2 {
   right: 0;
   bottom: 0;
   font-size: 25px;
-  margin-right: 20px;
   font-weight: normal;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-right: 10px;
 }
 .heart .fas {
   display: none;

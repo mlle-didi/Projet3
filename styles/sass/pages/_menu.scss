@@ -2,35 +2,44 @@ main{
 
     & > img{
         width: 100%;
+        object-fit: cover;
+        max-height: 400px;
+        margin-bottom: -60px;
     }
 
     section{
         border-top-left-radius: 40px;
         border-top-right-radius: 40px;
         position: relative;
-        top: -60px;
         background-color: $light-grey;
+        margin: auto;
 
-        
-            
-        }
-        h1 {
-            font-family: $font-title;
-            font-size: 1.8em;
-        }
+            .name-restaurant{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
 
-        & > div:first-of-type{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
+                h1 {
+                    font-family: $font-title;
+                    font-size: 1.8em;
+                    font-weight: normal;
+                }
+            }
+
+            button {
+            margin: 25px;
+            }
     }
+}
 
 .menu-heart {
     position: relative;
-    margin-left: 5px;
-    font-size: 25px;
-    margin-right : 20px;
+    font-size: x-large;
+    font-weight: normal;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-right: 10px;
 
         & .fas{
             display: none;

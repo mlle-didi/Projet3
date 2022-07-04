@@ -4,30 +4,54 @@
     background-color: white;
     overflow: hidden;
     margin: 10px 0;
+    position: relative;
 
-    .block-meal-container{
+    &-container{
         flex: 1;
-        padding: 0.8rem 0.5rem;
+        padding: 0.5rem 1.1rem 0.5rem 0.8rem;
+
+        @media (min-width: 320px) and (max-width: 370px) {
+            padding: 0.5rem;
+        }
 
         h3{
-            font-size: 1.2rem;
-            font-weight: bold;
+            font-size: 1.05em;
             margin: 5px 0;
+
+            @media (min-width: 320px) and (max-width: 370px) {
+                font-size: 1.05em;
+                margin: 5px 0;
+                width: 190px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                height: 20px;
+                white-space: nowrap;
+            }
         }
 
         .block-meal-description{
             display: flex;
             flex-direction: row;
             align-items: center;
+            cursor: pointer;
+            justify-content: space-between;
 
             p{
                 margin: 0;
+                font-size: 0.85em;
 
                 &:first-child{
-                    width: 100%;
+                    width: 250px;
                     text-overflow: ellipsis;
                     overflow: hidden;
                     height: 20px;
+                    white-space: nowrap;
+
+                    @media (min-width: 320px) and (max-width: 370px) {
+                        width: 190px;
+                    }
+
+                    
                 }
             }
 
@@ -36,4 +60,20 @@
             }
         }
     }
+
+    i{
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 0%;
+        background-color: $tertiary-color;
+        color: white;
+        transition: all $transition-duration;
+    }
+    
+    &:hover i{
+       width: 15%;
+    }
 } 
+

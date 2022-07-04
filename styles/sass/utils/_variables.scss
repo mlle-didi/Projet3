@@ -16,3 +16,30 @@ $grey_darken : darken($grey, 75%);
 /* TRANSITIONS */
 
 $transition-duration : 0.3s;
+
+/* MIXIN ANIMATIONS */
+
+@keyframes showing {
+    to {
+        top: 0;
+        opacity: 1;
+    }
+
+}
+
+$child:(
+    1 : 0.5s,
+    2 : 0.8s,
+    3 : 1.1s,
+    4 : 1.4s
+);
+
+@mixin animation-showing($object){
+    @each $num, $delai in $object{
+        &:nth-child(#{$num}){
+            animation: showing 1.5s linear $delai forwards;
+            cursor: pointer;
+        }
+    }
+} 
+
