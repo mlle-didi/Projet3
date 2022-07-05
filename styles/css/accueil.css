@@ -1,12 +1,6 @@
 /* COULEURS*/
 /* TRANSITIONS */
 /* MIXIN ANIMATIONS */
-@keyframes showing {
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
 * {
   box-sizing: border-box;
 }
@@ -97,30 +91,6 @@ h2 {
   font-weight: 700;
 }
 
-.heart {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  font-size: 25px;
-  font-weight: normal;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  margin-right: 10px;
-}
-.heart .fas {
-  display: none;
-}
-.heart:hover .fas {
-  display: inline;
-  background: linear-gradient(to top, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.heart:hover .far {
-  display: none;
-}
-
 .step-container {
   display: flex;
   flex-direction: column;
@@ -189,23 +159,28 @@ h2 {
   height: 150px;
   object-fit: cover;
 }
-.restaurant-description {
+.restaurant-description-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.restaurant-description-block .restaurant-description {
   align-items: flex-start;
   justify-content: space-between;
   padding: 0px 10px;
 }
-.restaurant-description-title {
+.restaurant-description-block .restaurant-description h3 {
   font-weight: bold;
-  margin-bottom: 0;
+  margin: 10px 0 5px 0;
 }
-.restaurant-description-city {
-  margin-top: 2px;
+.restaurant-description-block .restaurant-description p {
+  margin: 0 0 20px 0;
 }
-.restaurant-description div {
+.restaurant-description-block .restaurant-description div {
   display: flex;
   flex-direction: column;
 }
-.restaurant-description div p {
+.restaurant-description-block .restaurant-description div p {
   margin: 2px;
 }
 .restaurant--new {
@@ -247,6 +222,44 @@ footer ul li i {
   margin-right: 5px;
   width: 20px;
   color: white;
+}
+
+/* APPARITION COEUR PROGRESSIVE */
+@keyframes showHeartGradually {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.heart {
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+.heart .fas {
+  opacity: 0;
+  transition: all 0.5s;
+}
+.heart .far {
+  opacity: 1;
+  transition: opacity 0s;
+}
+.heart:hover {
+  animation: showHeartGradually 1s 0s forwards;
+}
+.heart:hover .fas {
+  background: linear-gradient(to top, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+}
+.heart:hover .far {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=accueil.css.map */

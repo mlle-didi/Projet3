@@ -1,0 +1,36 @@
+.heart {
+
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-right: 10px;
+    margin-bottom: 30px;
+
+        .fas{
+            opacity: 0;
+            transition: all 0.5s; 
+        }
+
+        .far{
+            opacity: 1;
+            transition: opacity 0s;
+        }
+    
+
+        &:hover{
+
+            animation: showHeartGradually 1s 0s forwards;
+            
+            .fas{
+                background: linear-gradient(to top, $secondary-color, $primary-color);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color : transparent;
+                opacity: 1;
+            }
+
+            .far{
+                opacity: 0;
+            }
+        }
+}

@@ -21,41 +21,13 @@ main{
 
                 h1 {
                     font-family: $font-title;
-                    font-size: 1.8em;
+                    font-size: 1.5em;
                     font-weight: normal;
                 }
             }
 
             button {
-            margin: 25px;
+            margin: 25px; 
             }
     }
-}
-
-.menu-heart {
-    position: relative;
-    font-size: x-large;
-    font-weight: normal;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    margin-right: 10px;
-
-        & .fas{
-            display: none;
-
-        }
-
-        &:hover{
-            & .fas{
-                display: inline;
-                background: linear-gradient(to top, $secondary-color, $primary-color);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color : transparent;
-            }
-
-            & .far{
-                display: none;
-            }
-        }
 }

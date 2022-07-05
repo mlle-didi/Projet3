@@ -1,12 +1,6 @@
 /* COULEURS*/
 /* TRANSITIONS */
 /* MIXIN ANIMATIONS */
-@keyframes showing {
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
 * {
   box-sizing: border-box;
 }
@@ -91,33 +85,11 @@ main section .name-restaurant {
 }
 main section .name-restaurant h1 {
   font-family: "Shrikhand", cursif, sans-cerif;
-  font-size: 1.8em;
+  font-size: 1.5em;
   font-weight: normal;
 }
 main section button {
   margin: 25px;
-}
-
-.menu-heart {
-  position: relative;
-  font-size: x-large;
-  font-weight: normal;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  margin-right: 10px;
-}
-.menu-heart .fas {
-  display: none;
-}
-.menu-heart:hover .fas {
-  display: inline;
-  background: linear-gradient(to top, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.menu-heart:hover .far {
-  display: none;
 }
 
 footer {
@@ -167,22 +139,6 @@ footer ul li i {
 .menu-section .block-list {
   display: flex;
   flex-direction: column;
-}
-.menu-section .block-list .block-meal:nth-child(1) {
-  animation: showing 1.5s linear 0.5s forwards;
-  cursor: pointer;
-}
-.menu-section .block-list .block-meal:nth-child(2) {
-  animation: showing 1.5s linear 0.8s forwards;
-  cursor: pointer;
-}
-.menu-section .block-list .block-meal:nth-child(3) {
-  animation: showing 1.5s linear 1.1s forwards;
-  cursor: pointer;
-}
-.menu-section .block-list .block-meal:nth-child(4) {
-  animation: showing 1.5s linear 1.4s forwards;
-  cursor: pointer;
 }
 
 .block-meal {
@@ -255,6 +211,44 @@ footer ul li i {
 }
 .block-meal:hover i {
   width: 15%;
+}
+
+/* APPARITION COEUR PROGRESSIVE */
+@keyframes showHeartGradually {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.heart {
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+.heart .fas {
+  opacity: 0;
+  transition: all 0.5s;
+}
+.heart .far {
+  opacity: 1;
+  transition: opacity 0s;
+}
+.heart:hover {
+  animation: showHeartGradually 1s 0s forwards;
+}
+.heart:hover .fas {
+  background: linear-gradient(to top, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+}
+.heart:hover .far {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=menu.css.map */

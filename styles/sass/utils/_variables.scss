@@ -19,14 +19,6 @@ $transition-duration : 0.3s;
 
 /* MIXIN ANIMATIONS */
 
-@keyframes showing {
-    to {
-        top: 0;
-        opacity: 1;
-    }
-
-}
-
 $child:(
     1 : 0.5s,
     2 : 0.8s,
