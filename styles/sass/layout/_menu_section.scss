@@ -17,5 +17,9 @@
     .block-list{
         display: flex;
         flex-direction: column;
+        .block-meal{
+            @include animation-showing($child);
         }
-}
+    }
+} 
+

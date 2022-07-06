@@ -32,7 +32,7 @@ strong {
   font-weight: bold;
 }
 
-button:not(.heart, .menu-heart) {
+button:not(.heart) {
   width: fit-content;
   padding: 10px 20px;
   border-radius: 30px;
@@ -43,7 +43,7 @@ button:not(.heart, .menu-heart) {
   align-self: center;
   box-shadow: 0 0 10px 5px lightgrey;
 }
-button:not(.heart, .menu-heart):hover {
+button:not(.heart):hover {
   background-image: linear-gradient(#ff93e1, #a16be0);
   box-shadow: 0 2px 4px 0px #6d6d6d;
 }
@@ -65,6 +65,9 @@ header .fa-arrow-right {
   visibility: hidden;
 }
 
+main {
+  background-color: #f4f2f2;
+}
 main > img {
   width: 100%;
   object-fit: cover;
@@ -77,19 +80,23 @@ main section {
   position: relative;
   background-color: #f4f2f2;
   margin: auto;
+  margin: auto;
 }
 main section .name-restaurant {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-right: -10px;
 }
 main section .name-restaurant h1 {
   font-family: "Shrikhand", cursif, sans-cerif;
   font-size: 1.5em;
   font-weight: normal;
 }
-main section button {
+main section .menu-button {
   margin: 25px;
+  display: flex;
+  justify-content: center;
 }
 
 footer {
@@ -140,6 +147,22 @@ footer ul li i {
   display: flex;
   flex-direction: column;
 }
+.menu-section .block-list .block-meal:nth-child(1) {
+  animation: showing 1.5s linear 0.5s forwards;
+  cursor: pointer;
+}
+.menu-section .block-list .block-meal:nth-child(2) {
+  animation: showing 1.5s linear 0.8s forwards;
+  cursor: pointer;
+}
+.menu-section .block-list .block-meal:nth-child(3) {
+  animation: showing 1.5s linear 1.1s forwards;
+  cursor: pointer;
+}
+.menu-section .block-list .block-meal:nth-child(4) {
+  animation: showing 1.5s linear 1.4s forwards;
+  cursor: pointer;
+}
 
 .block-meal {
   display: flex;
@@ -153,7 +176,7 @@ footer ul li i {
   flex: 1;
   padding: 0.5rem 1.1rem 0.5rem 0.8rem;
 }
-@media (min-width: 320px) and (max-width: 370px) {
+@media (min-width: 300px) and (max-width: 370px) {
   .block-meal-container {
     padding: 0.5rem;
   }
@@ -162,7 +185,7 @@ footer ul li i {
   font-size: 1.05em;
   margin: 5px 0;
 }
-@media (min-width: 320px) and (max-width: 370px) {
+@media (min-width: 300px) and (max-width: 370px) {
   .block-meal-container h3 {
     font-size: 1.05em;
     margin: 5px 0;
@@ -191,7 +214,7 @@ footer ul li i {
   height: 20px;
   white-space: nowrap;
 }
-@media (min-width: 320px) and (max-width: 370px) {
+@media (min-width: 300px) and (max-width: 370px) {
   .block-meal-container .block-meal-description p:first-child {
     width: 190px;
   }
@@ -215,40 +238,90 @@ footer ul li i {
 
 /* APPARITION COEUR PROGRESSIVE */
 @keyframes showHeartGradually {
-  from {
-    opacity: 0;
+  0% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 0%, white 0%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
   }
-  to {
-    opacity: 1;
+  10% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 10%, white 10%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  20% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 20%, white 20%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  30% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 30%, white 30%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  40% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 40%, white 40%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  50% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 50%, white 50%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  60% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 60%, white 60%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  70% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 70%, white 70%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  80% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 80%, white 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  90% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 90%, white 90%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  100% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
   }
 }
 .heart {
+  position: relative;
   font-size: 1.5rem;
   background-color: transparent;
   border: none;
-  padding: 0;
   margin-right: 10px;
+  padding: 0;
   margin-bottom: 30px;
 }
-.heart .fas {
-  opacity: 0;
-  transition: all 0.5s;
-}
 .heart .far {
-  opacity: 1;
-  transition: opacity 0s;
-}
-.heart:hover {
-  animation: showHeartGradually 1s 0s forwards;
-}
-.heart:hover .fas {
-  background: linear-gradient(to top, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  top: 0;
+  right: 0;
+  position: absolute;
   opacity: 1;
 }
 .heart:hover .far {
-  opacity: 0;
+  animation: showHeartGradually 1s 0s forwards;
 }
 
 /*# sourceMappingURL=menu.css.map */

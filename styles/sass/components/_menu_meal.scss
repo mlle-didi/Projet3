@@ -10,7 +10,7 @@
         flex: 1;
         padding: 0.5rem 1.1rem 0.5rem 0.8rem;
 
-        @media (min-width: 320px) and (max-width: 370px) {
+        @media (min-width: 300px) and (max-width: 370px) {
             padding: 0.5rem;
         }
 
@@ -18,7 +18,7 @@
             font-size: 1.05em;
             margin: 5px 0;
 
-            @media (min-width: 320px) and (max-width: 370px) {
+            @media (min-width: 300px) and (max-width: 370px) {
                 font-size: 1.05em;
                 margin: 5px 0;
                 width: 190px;
@@ -47,7 +47,7 @@
                     height: 20px;
                     white-space: nowrap;
 
-                    @media (min-width: 320px) and (max-width: 370px) {
+                    @media (min-width: 300px) and (max-width: 370px) {
                         width: 190px;
                     }
 

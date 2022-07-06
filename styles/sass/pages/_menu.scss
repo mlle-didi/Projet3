@@ -1,4 +1,5 @@
 main{
+    background-color: $light-grey;
 
     & > img{
         width: 100%;
@@ -14,10 +15,13 @@ main{
         background-color: $light-grey;
         margin: auto;
 
+        margin: auto;
+
             .name-restaurant{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                margin-right: -10px;
 
                 h1 {
                     font-family: $font-title;
@@ -25,9 +29,11 @@ main{
                     font-weight: normal;
                 }
             }
-
-            button {
-            margin: 25px; 
+            
+            .menu-button{
+                margin: 25px;
+                display: flex;
+                justify-content: center;
             }
-    }
+        }
 }
