@@ -1,6 +1,5 @@
 /* COULEURS*/
 /* TRANSITIONS */
-/* MIXIN ANIMATIONS */
 * {
   box-sizing: border-box;
 }
@@ -34,7 +33,11 @@ strong {
 
 button:not(.heart) {
   width: fit-content;
+  height: 3rem;
+  font-size: 0.95rem;
+  font-weight: 500;
   padding: 10px 20px;
+  margin-top: 10px;
   border-radius: 30px;
   border: none;
   color: white;
@@ -52,24 +55,35 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  margin: 20px 10px 5px 10px;
 }
 header h1 {
   margin: 0;
 }
 header img {
-  width: 200px;
+  width: 160px;
 }
 
 .location {
   text-align: center;
   background-color: #eceaea;
   padding: 1rem;
+  padding-left: 75px;
   margin: 0;
   font-weight: bold;
+  color: #2e2a2a;
+  box-shadow: 0px 0px 5px #2e2a2a;
 }
-.location i {
+
+* i {
   margin-right: 10px;
+}
+* input {
+  background-color: #eceaea;
+  border-style: none;
+  font-weight: bold;
+  font-size: 15px;
+  width: 180px;
 }
 
 section {
@@ -81,6 +95,9 @@ section:first-of-type {
   align-items: center;
   padding: 1rem;
   padding-bottom: 3rem;
+}
+section:first-of-type p {
+  margin-top: 0;
 }
 
 section:nth-child(odd) {
@@ -95,6 +112,12 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+@media (min-width: 768px) {
+  .step-container {
+    flex-direction: row;
+    align-items: normal;
+  }
 }
 .step-container .step {
   width: calc(100% - 0.5em);
@@ -136,12 +159,24 @@ h2 {
 .step-container .step:hover i {
   color: #9356DC;
 }
+@media (min-width: 768px) {
+  .step-container .step:nth-of-type(2) {
+    margin: 10px 20px 10px 20px;
+  }
+}
 
 .card {
   box-shadow: 1px 5px 5px lightgrey;
 }
 
-.restaurant {
+@media (min-width: 768px) {
+  .restaurants-list {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-column-gap: 20px;
+  }
+}
+.restaurants-list .restaurant {
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -150,40 +185,40 @@ h2 {
   margin-bottom: 20px;
   background-color: white;
 }
-.restaurant a {
+.restaurants-list .restaurant a {
   width: 100%;
   height: 100%;
 }
-.restaurant a img {
+.restaurants-list .restaurant a img {
   width: 100%;
   height: 150px;
   object-fit: cover;
 }
-.restaurant-description-block {
+.restaurants-list .restaurant-description-block {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.restaurant-description-block .restaurant-description {
+.restaurants-list .restaurant-description-block .restaurant-description {
   align-items: flex-start;
   justify-content: space-between;
   padding: 0px 10px;
 }
-.restaurant-description-block .restaurant-description h3 {
+.restaurants-list .restaurant-description-block .restaurant-description h3 {
   font-weight: bold;
   margin: 10px 0 5px 0;
 }
-.restaurant-description-block .restaurant-description p {
+.restaurants-list .restaurant-description-block .restaurant-description p {
   margin: 0 0 20px 0;
 }
-.restaurant-description-block .restaurant-description div {
+.restaurants-list .restaurant-description-block .restaurant-description div {
   display: flex;
   flex-direction: column;
 }
-.restaurant-description-block .restaurant-description div p {
+.restaurants-list .restaurant-description-block .restaurant-description div p {
   margin: 2px;
 }
-.restaurant--new {
+.restaurants-list .restaurant--new {
   position: absolute;
   right: 10px;
   top: 10px;
@@ -198,19 +233,37 @@ footer {
   padding: 1em;
   background-color: #2e2a2a;
 }
+footer p {
+  margin-bottom: 10px;
+  font-family: "Shrikhand", cursif, sans-cerif;
+  font-size: 1.1rem;
+  font-weight: normal;
+  color: white;
+}
+@media (min-width: 768px) {
+  footer p {
+    text-align: center;
+    margin: 0px 0 25px 0;
+    font-size: 1.1rem;
+  }
+}
 footer ul {
   padding-left: 0;
+  display: flex;
+  justify-content: space-around;
 }
 footer ul li {
   list-style: none;
   margin-bottom: 10px;
   color: white;
   font-size: 0.8rem;
+  font-weight: bold;
 }
-footer ul li:first-of-type {
-  margin-bottom: 20px;
-  font-family: "Shrikhand", cursif, sans-cerif;
-  font-size: 1.1rem;
+@media (min-width: 768px) {
+  footer ul li {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
 }
 footer ul li a {
   color: white;

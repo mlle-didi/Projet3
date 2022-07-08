@@ -1,19 +1,36 @@
 footer{
     padding: 1em;
     background-color: $grey_darken;
+
+    p{                
+        margin-bottom: 10px;
+        font-family: $font-title;
+        font-size: 1.1rem;
+        font-weight: normal;
+        color: white;
+
+        @media (min-width: 768px){
+            text-align: center;
+            margin: 0px 0 25px 0;
+            font-size: 1.1rem;
+        }
+    }
+
     & ul{
         padding-left: 0;
+        display: flex;
+        justify-content: space-around;
 
         & li{
             list-style: none;
             margin-bottom: 10px;
             color: white;
             font-size: 0.8rem;
+            font-weight: bold;
 
-            &:first-of-type{                
-                margin-bottom: 20px;
-                font-family: $font-title;
-                font-size: 1.1rem;
+            @media (min-width: 768px){
+                font-size: 1rem;
+                margin-bottom: 0;
             }
 
             & a{
