@@ -77,27 +77,46 @@ main > img {
   max-height: 400px;
   margin-bottom: -60px;
 }
+main .name-restaurant {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+  margin-left: 20px;
+}
+@media (min-width: 768px) {
+  main .name-restaurant {
+    margin-left: 0;
+    justify-content: center;
+  }
+}
+main .name-restaurant h1 {
+  font-family: "Shrikhand", cursif, sans-cerif;
+  font-size: 1.5em;
+  font-weight: normal;
+}
 main section {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   position: relative;
   background-color: #f4f2f2;
   margin: auto;
-  margin: auto;
 }
-main section .name-restaurant {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-right: -10px;
+@media (min-width: 768px) and (max-width: 1059px) {
+  main section {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-column-gap: 20px;
+  }
 }
-main section .name-restaurant h1 {
-  font-family: "Shrikhand", cursif, sans-cerif;
-  font-size: 1.5em;
-  font-weight: normal;
+@media (min-width: 1060px) {
+  main section {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
-main section .menu-button {
-  margin: 15px 0 15px 0;
+main .menu-button {
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
 }
@@ -325,6 +344,11 @@ footer ul li i {
   margin-right: 10px;
   padding: 0;
   margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .heart {
+    margin-left: 40px;
+  }
 }
 .heart .far {
   top: 0;

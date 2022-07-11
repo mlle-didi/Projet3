@@ -359,6 +359,11 @@ footer ul li i {
   padding: 0;
   margin-bottom: 30px;
 }
+@media (min-width: 768px) {
+  .heart {
+    margin-left: 40px;
+  }
+}
 .heart .far {
   top: 0;
   right: 0;

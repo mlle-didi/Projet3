@@ -7,7 +7,11 @@
     margin-right: 10px;
     padding: 0;
     margin-bottom: 30px;
-            
+
+    @media (min-width: 768px){
+        margin-left: 40px;
+    } 
+
         .far{
             top: 0;
             right: 0;
