@@ -122,8 +122,12 @@ footer p {
 }
 footer ul {
   padding-left: 0;
-  display: flex;
-  justify-content: space-around;
+}
+@media (min-width: 768px) {
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 footer ul li {
   list-style: none;
@@ -134,8 +138,8 @@ footer ul li {
 }
 @media (min-width: 768px) {
   footer ul li {
-    font-size: 1rem;
     margin-bottom: 0;
+    font-size: 1rem;
   }
 }
 footer ul li a {

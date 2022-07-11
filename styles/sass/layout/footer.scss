@@ -18,8 +18,11 @@ footer{
 
     & ul{
         padding-left: 0;
+
+        @media (min-width: 768px){
         display: flex;
         justify-content: space-around;
+        }
 
         & li{
             list-style: none;
@@ -29,8 +32,8 @@ footer{
             font-weight: bold;
 
             @media (min-width: 768px){
-                font-size: 1rem;
                 margin-bottom: 0;
+                font-size: 1rem;
             }
 
             & a{
