@@ -1,15 +1,21 @@
+@import '../utils/mixin';
+
 .block-meal{
     display: flex;
     border-radius: 20px;
     background-color: white;
     overflow: hidden;
     margin: 10px 0;
-    position: relative;
+    opacity: 0;
+    @include animation-showing($block-meal-anim-delay);
 
     &-container{
         flex: 1;
         padding: 0.5rem 1.1rem 0.5rem 0.8rem;
+        overflow: hidden;
+        width: 250px;
 
+        /* VERSION MOBILE PETIT ECRAN */
         @media (min-width: 300px) and (max-width: 370px) {
             padding: 0.5rem;
         }
@@ -17,15 +23,16 @@
         h3{
             font-size: 1.05em;
             margin: 5px 0;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
 
+            /* VERSION MOBILE PETIT ECRAN */
             @media (min-width: 300px) and (max-width: 370px) {
                 font-size: 1.05em;
                 margin: 5px 0;
                 width: 190px;
-                text-overflow: ellipsis;
-                overflow: hidden;
                 height: 20px;
-                white-space: nowrap;
             }
         }
 
@@ -41,22 +48,16 @@
                 font-size: 0.85em;
 
                 &:first-child{
-                    width: 250px;
                     text-overflow: ellipsis;
                     overflow: hidden;
                     height: 20px;
                     white-space: nowrap;
-
-                    @media (min-width: 300px) and (max-width: 370px) {
-                        width: 190px;
-                    }
-
-                    
                 }
             }
 
             .price {
                 font-weight: bold;
+                margin-left: 10px;
             }
         }
     }
@@ -66,14 +67,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 0%;
+        width: 0;
         background-color: $tertiary-color;
         color: white;
         transition: all $transition-duration;
     }
     
     &:hover i{
-       width: 15%;
+       width: 60px;
     }
+
 } 
+
+
 

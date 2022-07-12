@@ -1,3 +1,4 @@
+/* LOCALISATION */
 .location{
     text-align: center;
     background-color: $grey;
@@ -10,7 +11,7 @@
 }
 
 * {
-
+    
     & i{
         margin-right: 10px;
     }
@@ -23,11 +24,16 @@
         width: 180px;     
     }
 }
-
+/* SECTION REVERVATION OU FONCTIONNEMENT OU RESTAURANT */
 section{
     background-color: $light-grey;
+
+    h2 {
+        font-weight: 700;
+    }
 }
 
+/* INTRODUCTION */
 section:first-of-type{
     text-align: center;
     align-items: center;
@@ -39,13 +45,12 @@ section:first-of-type{
     }
 } 
 
+/* SECTION FONCTIONNEMENT */
 section:nth-child(odd){
     background-color: white;
 } 
 
-h2 {
-    font-weight: 700;
-}
+
 
 
 

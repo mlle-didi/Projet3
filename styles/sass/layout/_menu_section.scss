@@ -1,25 +1,41 @@
-.menu-section{
-    display: flex;
-    flex-direction: column;
-
-    h2{
-        font-size: 1em;
-        margin-bottom: 5px;
-        font-weight: normal;
+/* SECTION ENTREES OU PLATS OU DESSERTS */
+.menu {
+    /* VERSION TABLETTE */
+    @media (min-width: 768px) and (max-width: 991px){
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        grid-column-gap: 20px;
     }
 
-    .underline{
-        height: 3px;
-        width: 50px;
-        background-color: $tertiary-color;
-    }
+    /* VERSION DESKTOP */
+    @media (min-width: 992px){
+        display: grid;
+        grid-template-columns: repeat(3,3fr);
+        grid-column-gap: 20px;
 
-    .block-list{
+    }
+    &-section{
         display: flex;
         flex-direction: column;
-        /*.block-meal{
-            @include animation-showing($child);
-        }*/
+        width: 100%;
+
+        h2{
+            font-size: 1em;
+            margin-bottom: 5px;
+            font-weight: normal;
+        }
+
+        .underline{
+            height: 3px;
+            width: 50px;
+            background-color: $tertiary-color;
+        }
+
+        .block-list{
+            display: flex;
+            flex-direction: column;
+        }
     }
-} 
+}
+
 

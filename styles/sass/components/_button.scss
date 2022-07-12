@@ -1,3 +1,4 @@
+/* BOUTON SAUF COEUR */
 button:not(.heart){
     width: fit-content;
     height: 3rem;
@@ -13,6 +14,7 @@ button:not(.heart){
     align-self: center;
     box-shadow: 0 0 10px 5px $shadow-card;
 
+    /* BOUTON ECLAIRCI */
     &:hover{
         background-image: linear-gradient(lighten($secondary-color, 5% ), lighten($primary-color, 5%));
         box-shadow: 0 2px 4px 0px darken($shadow-card, 40%);

@@ -1,0 +1,9 @@
+/* MIXIN POUR ANIMATION APPARITION DES SECTIONS-MENUS */
+
+@mixin animation-showing($object){
+    @each $num, $delai in $object{
+        &:nth-child(#{$num}){
+            animation: showing 1.5s linear $delai forwards;
+        }
+    }
+}

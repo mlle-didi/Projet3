@@ -2,13 +2,15 @@ footer{
     padding: 1em;
     background-color: $grey_darken;
 
+    /* OHMYFOOD */
     p{                
         margin-bottom: 10px;
         font-family: $font-title;
         font-size: 1.1rem;
         font-weight: normal;
         color: white;
-
+        
+        /* VERSION TABLETTE & DESKTOP */
         @media (min-width: 768px){
             text-align: center;
             margin: 0px 0 25px 0;
@@ -16,9 +18,11 @@ footer{
         }
     }
 
+    /* LIENS */
     & ul{
         padding-left: 0;
-
+        
+        /* VERSION TABLETTE & DESKTOP */
         @media (min-width: 768px){
         display: flex;
         justify-content: space-around;
@@ -31,6 +35,7 @@ footer{
             font-size: 0.8rem;
             font-weight: bold;
 
+            /* VERSION TABLETTE & DESKTOP */
             @media (min-width: 768px){
                 margin-bottom: 0;
                 font-size: 1rem;

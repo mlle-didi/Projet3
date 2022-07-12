@@ -79,3 +79,13 @@
         font-weight: bold;    
     }
 }
+
+/*  APPARITION DES SECTIONS-MENUS */
+
+@keyframes showing{
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+

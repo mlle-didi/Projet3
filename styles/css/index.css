@@ -1,5 +1,6 @@
 /* COULEURS*/
 /* TRANSITIONS */
+/* DELAIS ENTRE MENUS */
 * {
   box-sizing: border-box;
 }
@@ -31,6 +32,7 @@ strong {
   font-weight: bold;
 }
 
+/* BOUTON SAUF COEUR */
 button:not(.heart) {
   width: fit-content;
   height: 3rem;
@@ -45,12 +47,14 @@ button:not(.heart) {
   cursor: pointer;
   align-self: center;
   box-shadow: 0 0 10px 5px lightgrey;
+  /* BOUTON ECLAIRCI */
 }
 button:not(.heart):hover {
   background-image: linear-gradient(#ff93e1, #a16be0);
   box-shadow: 0 2px 4px 0px #6d6d6d;
 }
 
+/* HEADER PAGE INDEX */
 header {
   display: flex;
   justify-content: center;
@@ -64,6 +68,7 @@ header img {
   width: 160px;
 }
 
+/* LOCALISATION */
 .location {
   text-align: center;
   background-color: #eceaea;
@@ -86,10 +91,15 @@ header img {
   width: 180px;
 }
 
+/* SECTION REVERVATION OU FONCTIONNEMENT OU RESTAURANT */
 section {
   background-color: #f4f2f2;
 }
+section h2 {
+  font-weight: 700;
+}
 
+/* INTRODUCTION */
 section:first-of-type {
   text-align: center;
   align-items: center;
@@ -100,18 +110,19 @@ section:first-of-type p {
   margin-top: 0;
 }
 
+/* SECTION FONCTIONNEMENT */
 section:nth-child(odd) {
   background-color: white;
 }
 
-h2 {
-  font-weight: 700;
-}
-
+/* LE BLOC PARENT FONCTIONNEMENT */
 .step-container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  /* VERSION TABLETTE & DESKTOP */
+  /* UN BLOC ENFANT FONCTIONNEMENT */
+  /* BLOC 2 EN VERSION TABLETTE & DESKTOP */
 }
 @media (min-width: 768px) {
   .step-container {
@@ -129,6 +140,8 @@ h2 {
   padding: 2em 0;
   margin: 10px 0;
   transition: background-color 0.3s;
+  box-shadow: 1px 5px 5px lightgrey;
+  /* NUMERO */
 }
 .step-container .step p {
   display: flex;
@@ -165,10 +178,10 @@ h2 {
   }
 }
 
-.card {
-  box-shadow: 1px 5px 5px lightgrey;
+/* LE BLOC PARENT RESTAURANT EN VERSION TABLETTE & DESKTOP */
+.restaurants-list {
+  /* UN BLOC ENFANT RESTAURANT */
 }
-
 @media (min-width: 768px) {
   .restaurants-list {
     display: grid;
@@ -184,6 +197,10 @@ h2 {
   display: flex;
   margin-bottom: 20px;
   background-color: white;
+  box-shadow: 1px 5px 5px lightgrey;
+  /* LIEN CHAQUE BLOC */
+  /* DESCRIPTION RESTAURANT */
+  /* ETIQUETTE NOUVEAU */
 }
 .restaurants-list .restaurant a {
   width: 100%;
@@ -232,6 +249,8 @@ h2 {
 footer {
   padding: 1em;
   background-color: #2e2a2a;
+  /* OHMYFOOD */
+  /* LIENS */
 }
 footer p {
   margin-bottom: 10px;
@@ -239,6 +258,7 @@ footer p {
   font-size: 1.1rem;
   font-weight: normal;
   color: white;
+  /* VERSION TABLETTE & DESKTOP */
 }
 @media (min-width: 768px) {
   footer p {
@@ -249,6 +269,7 @@ footer p {
 }
 footer ul {
   padding-left: 0;
+  /* VERSION TABLETTE & DESKTOP */
 }
 @media (min-width: 768px) {
   footer ul {
@@ -262,6 +283,7 @@ footer ul li {
   color: white;
   font-size: 0.8rem;
   font-weight: bold;
+  /* VERSION TABLETTE & DESKTOP */
 }
 @media (min-width: 768px) {
   footer ul li {
@@ -350,6 +372,13 @@ footer ul li i {
     font-weight: bold;
   }
 }
+/*  APPARITION DES SECTIONS-MENUS */
+@keyframes showing {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .heart {
   position: relative;
   font-size: 1.5rem;
@@ -358,6 +387,7 @@ footer ul li i {
   margin-right: 10px;
   padding: 0;
   margin-bottom: 30px;
+  /* VERSION TABLETTE & DESKTOP */
 }
 @media (min-width: 768px) {
   .heart {
@@ -374,4 +404,4 @@ footer ul li i {
   animation: showHeartGradually 1s 0s forwards;
 }
 
-/*# sourceMappingURL=accueil.css.map */
+/*# sourceMappingURL=index.css.map */

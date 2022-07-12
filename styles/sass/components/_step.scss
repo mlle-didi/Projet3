@@ -1,13 +1,16 @@
+/* LE BLOC PARENT FONCTIONNEMENT */
 .step-container{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 
+    /* VERSION TABLETTE & DESKTOP */
     @media (min-width: 768px){
         flex-direction: row;
         align-items: normal;    
     }
 
+    /* UN BLOC ENFANT FONCTIONNEMENT */
     .step{
         width: calc(100% - 0.5em);
         display: flex;
@@ -18,7 +21,9 @@
         padding: 2em 0;
         margin: 10px 0;
         transition: background-color $transition-duration;
+        box-shadow: 1px 5px 5px $shadow-card;
 
+        /* NUMERO */
         & p{
 
             display: flex;
@@ -54,6 +59,8 @@
             }
         }
     }
+
+    /* BLOC 2 EN VERSION TABLETTE & DESKTOP */
     .step:nth-of-type(2) {
         @media (min-width: 768px){
             margin: 10px 20px 10px 20px;
