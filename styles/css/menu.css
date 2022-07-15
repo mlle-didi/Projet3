@@ -7,7 +7,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  color: black;
+  color: #333333;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -25,7 +25,7 @@ section {
 
 a, a:visited {
   text-decoration: none;
-  color: black;
+  color: #333333;
 }
 
 strong {
@@ -298,7 +298,50 @@ footer ul li i {
   width: 60px;
 }
 
-/* APPARITION COEUR PROGRESSIVE */
+/* LOADER SPINNER */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* BLOC DU LOADER */
+@keyframes off {
+  from {
+    opacity: 90%;
+  }
+  to {
+    display: none;
+    opacity: 0%;
+    z-index: -1;
+  }
+}
+/* CHANGEMENT COULEUR DE LA BORDURE */
+@keyframes changeColorBorder {
+  0% {
+    border-right-color: #FF79DA;
+    border-bottom-color: #FF79DA;
+    border-left-color: #FF79DA;
+  }
+  33% {
+    border-right-color: #9356DC;
+    border-bottom-color: #9356DC;
+    border-left-color: #9356DC;
+  }
+  66% {
+    border-right-color: #FF79DA;
+    border-bottom-color: #FF79DA;
+    border-left-color: #FF79DA;
+  }
+  100% {
+    border-right-color: #9356DC;
+    border-bottom-color: #9356DC;
+    border-left-color: #9356DC;
+  }
+}
+/* REMPLISSAGE DU COEUR */
 @keyframes showHeartGradually {
   0% {
     background: linear-gradient(0deg, #FF79DA, #9356DC 0%, white 0%);

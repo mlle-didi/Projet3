@@ -1,0 +1,45 @@
+.bloc {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    animation: off;
+    animation-duration: 3s;
+    transition: opacity 3s ease-in-out;
+    animation-delay: 1.75s;
+    animation-fill-mode: both;
+  
+    &__loader {
+        align-items: center;
+        justify-content: center;
+        border: solid 17px lightgrey;
+        border-radius: 50%;
+        z-index: 1;
+        width: 167px;
+        height: 167px;
+        margin-top: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        border-top-color: transparent;
+        border-right-color: $secondary-color;
+        border-bottom-color: $secondary-color;
+        border-left-color: $secondary-color;
+        animation: rotate 1s 0s linear , changeColorBorder 3s 0s linear;
+        animation-duration: 3s ;
+        }
+    
+    p {
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        margin-left: auto;
+        margin-right: auto;
+        color: $black;
+        font-weight: bold;
+        font-family: $font-text;
+        font-size: large;
+    }
+}

@@ -1,4 +1,56 @@
-/* APPARITION COEUR PROGRESSIVE */
+/* LOADER SPINNER */
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+  
+/* BLOC DU LOADER */
+  
+@keyframes off{
+    from {
+        opacity: 90%;
+    }
+
+    to {
+        display: none;
+        opacity: 0%;
+        z-index: -1;
+    }
+}
+
+/* CHANGEMENT COULEUR DE LA BORDURE */
+
+@keyframes changeColorBorder {
+    0%{
+        border-right-color: $secondary-color;
+        border-bottom-color: $secondary-color;
+        border-left-color: $secondary-color;
+    }
+
+    33%{
+        border-right-color: $primary-color;
+        border-bottom-color: $primary-color;
+        border-left-color: $primary-color;
+    }
+    66%{
+        border-right-color: $secondary-color;
+        border-bottom-color: $secondary-color;
+        border-left-color: $secondary-color;
+    }
+
+    100%{
+        border-right-color: $primary-color;
+        border-bottom-color: $primary-color;
+        border-left-color: $primary-color;
+    }
+}
+
+/* REMPLISSAGE DU COEUR */
 
 @keyframes showHeartGradually {
 
