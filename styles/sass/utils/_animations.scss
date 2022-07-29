@@ -13,12 +13,11 @@
   
 @keyframes off{
     from {
-        opacity: 90%;
+        opacity: 1;
     }
 
     to {
-        display: none;
-        opacity: 0%;
+        opacity: 0;
         z-index: -1;
     }
 }
