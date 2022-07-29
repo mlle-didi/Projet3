@@ -44,7 +44,7 @@ Les effets accessibles au clic ou au survol sont visibles sur la maquette. Ils d
 - Les vidéos d'illustration des animations.
 - Les images présentes dans les maquettes.
 - La liste des différents menus proposée par restaurants.
-- Le [brief] (https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P3+CSS+animations/DW+P3+-+Brief+creatif+-+Ohmyfood!.pdf) du projet.
+- Le [brief](https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P3+CSS+animations/DW+P3+-+Brief+creatif+-+Ohmyfood!.pdf) du projet.
  - Les polices [Roboto](https://fonts.google.com/specimen/Roboto) et [Shrikhand](https://fonts.google.com/specimen/Shrikhand?query=Shrikhand).
  - Les couleurs de la charte :
   - Primaire : #9356DC
