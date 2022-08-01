@@ -1,6 +1,6 @@
 # Projet3-OhMyFood
 Troisième projet du parcours "Développeur Web" d'OpenClassrooms. 
-Dynamisez une page web avec des animations CSS
+Dynamisez une page web avec des animations CSS.
 
 ## Cahier des charges
 - L'intégration doit se faire uniquement en HTML5 et CSS3 sans JavaScript.

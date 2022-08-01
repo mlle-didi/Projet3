@@ -284,18 +284,24 @@ footer ul li i {
   font-weight: bold;
   margin-left: 10px;
 }
-.block-meal i {
-  font-size: 1.5rem;
+.block-meal .check {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 0;
   background-color: #99E2D0;
-  color: white;
   transition: all 0.3s;
 }
-.block-meal:hover i {
+.block-meal .check i {
+  font-size: 1.5rem;
+  color: white;
+}
+.block-meal:hover .check {
   width: 60px;
+}
+.block-meal:hover .check i {
+  transform: rotate(360deg);
+  transition: all 0.5s;
 }
 
 /* LOADER SPINNER */

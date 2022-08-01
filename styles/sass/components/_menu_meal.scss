@@ -63,22 +63,29 @@
         }
     }
 
-    i{
-        font-size: 1.5rem;
+    .check{
         display: flex;
         justify-content: center;
         align-items: center;
         width: 0;
         background-color: $tertiary-color;
-        color: white;
         transition: all $transition-duration;
+
+        i{
+            font-size: 1.5rem;
+            color: white;
+        }
     }
     
-    &:hover i{
+    &:hover .check{
        width: 60px;
+       
+       i{
+        transform: rotate(360deg);
+        transition: all 0.5s;
+       }
     }
-
-} 
+}
 
 
 
